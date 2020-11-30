@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    
+    <div class="calculator">
+        <div class="calculator__display">
+            <input type="text" placeholder="321+4654/54" readonly data-input>
+        </div>
+        <div class="calculator__button">
+            <div class="calc__row">
+                <button class="btn btn--grey" data-operation="+">+</button>
+                <button class="btn btn--grey" data-operation="-">-</button>
+                <button class="btn btn--grey" data-operation="*">&#215;</button>
+                <button class="btn btn--grey" data-operation="/">&#8274;</button>
+            </div>
+            <div class="calc__row">
+                <div class="calc__col">
+                    <div class="calc__row">
+                        <button class="btn btn--pastel" data-number="7">7</button>
+                        <button class="btn btn--pastel" data-number="8">8</button>
+                        <button class="btn btn--pastel" data-number="9">9</button>
+                    </div>
+                    <div class="calc__row">
+                        <button class="btn btn--pastel" data-number="4">4</button>
+                        <button class="btn btn--pastel" data-number="5">5</button>
+                        <button class="btn btn--pastel" data-number="6">6</button>
+                    </div>
+                    <div class="calc__row">
+                        <button class="btn btn--pastel" data-number="1">1</button>
+                        <button class="btn btn--pastel" data-number="2">2</button>
+                        <button class="btn btn--pastel" data-number="3">3</button>
+                    </div>
+                    <div class="calc__row">
+                        <button class="btn btn--pastel" data-number="0">0</button>
+                        <button class="btn btn--pastel" data-number=".">.</button>
+                        <button class="btn btn--pastel" data-clear>C</button>
+                    </div>
+                </div>
+                <div class="calc__col">
+                    <button class="btn btn__equal btn--blue" data-equal>=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/calculator.js"></script>
+</body>
+</html>

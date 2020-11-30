@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.702);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.calculator {
+    display: inline-block;
+    position: fixed;
+    left: 50%;
+    top: 50%; 
+    transform: translate(-50%, -50%);   
+    padding: .5rem;
+    border: 1px solid rgba(0, 0, 0, 0.702);
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.calculator__display {
+    width: 16rem;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 0.8rem 1.2rem;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline-style: none;
+    text-align: right;
+    font-size: 1.5rem;
+    color: #000000;
+}
+
+.calculator__button {
+    display: flex;
+    flex-direction: column;
+}
+.calc__row {
+    display: flex;  
+}
+
+.btn {
+    width: 4rem;
+    height: 4rem;
+    border: 1px solid #ffffff;
+    padding: 1rem;
+    color: #535353;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 2rem;
+    outline-style: none;
+}
+
+.btn__equal {
+    height: 100%;
+}
+
+.btn--grey {
+    background-color: #c3c7c3;
+}  
+.btn--grey:hover {
+    background-color: #95c2dd;
+}
+.btn--pastel {
+    background-color: #dddfdd;
+}  
+.btn--pastel:hover {
+    background-color: #95c2dd;
+}
+.btn--blue {
+    background-color: #3679af;
+    color: #ffffff;
+}  
+.btn--blue:hover {
+    background-color: #95c2dd;
+    color: #535353;
+}
