@@ -32,7 +32,6 @@ function writeOutput(value) {
 
 // Egyenlőség jel button megnyomásának kezelése.
 equal.addEventListener('click', () => {
-    console.log(calcString);
     stringSort(calcString);
     numbersArr.forEach( item => {
         if ( isNaN(item) ) {
@@ -84,6 +83,5 @@ function resultOperations () {
     operatorsArr.forEach((item, index) => { 
         result = operatorsObj[item](result, numbersArr[index+1])
     });
-    console.log(result);
     return result;
 };
